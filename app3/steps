@@ -1,0 +1,29 @@
+mkdit appDocker
+
+cd appDocker
+gedit index.html
+
+gedit Dockerfile
+
+docker --version (sudo apt install docker.io -y)
+
+sudo systemctl start docker
+
+sudo systemctl enable docker 
+
+sudo docker build -t html-app:1.0 .
+
+sudo docker images
+
+sudo docker run -d -p 8080:80 html-app:1.0
+
+
+sudo docker ps
+
+sudo docker images
+
+sudo docker stop <container_id>
+
+sudo docker rm <container_id>
+
+sudo docker rmi <image_id>

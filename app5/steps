@@ -1,0 +1,26 @@
+mkdir ml
+
+cd ml
+sudo apt install python3-venv
+
+python3 -m venv myenv
+
+source myenv/bin/activate
+
+gedit requirements.txt
+
+pip install -r requirements.txt
+
+jupyter lab
+
+control+c then y
+
+ls
+
+git init 
+git config user.name "your_name"
+git config user.email "your_email"  
+git add .
+
+push to git (commit , branch, remote add, push)
+

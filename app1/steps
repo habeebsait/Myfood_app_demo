@@ -1,0 +1,30 @@
+git init
+
+git config user.name "ramaiah"
+git config user.email "ramiah@mail.com"
+
+git add .
+
+
+
+//copy from github : commit , branch, remote add origin , push
+
+git branch
+
+git branch update-from
+
+git checkout update-from
+
+gedit form.html
+
+git add .
+
+git commit -m "update from branch" 
+
+git checkout main
+
+git merge update-from
+
+git push -u origin main
+
+

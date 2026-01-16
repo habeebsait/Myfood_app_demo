@@ -1,0 +1,33 @@
+pip install dvc
+
+mkdir q7
+cd q7
+
+git init 
+
+git dvc init
+
+mkdir data
+cd data
+mkdir raw
+mkdir processed 
+
+cd raw 
+gedit  data.csv
+cd ..
+cd ..
+
+mkdir scripts 
+cd scripts
+gedit main.py
+cd ..
+
+dvc stage add -n clean -d scripts/main.py -d data/raw/data.csv -o data/processed/process.csv python scripts/main.py
+
+git add .
+
+git commit -m "add dvc stage for data processing"
+
+dvc repro
+
+ls (dvc.lock dvc.yaml should be present)

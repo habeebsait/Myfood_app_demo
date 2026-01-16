@@ -15,3 +15,5 @@ for c in [0.1,1.0]:
         mlflow.log_param("C",c)
         mlflow.log_metrics('acc',acc_score)
         mlflow.sklean.log_model(m, 'model')
+
+mlflow ui
